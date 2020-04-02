@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3d65f69c7.js" crossorigin="anonymous"></script>
+    <title>YYRO</title>
+    <link rel="icon" href="image/titleicon.png" type="image/icon type">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+
+        <ul class="navbar-nav">
+            <li><a href="http://yyragnarok.com/">首页</a></li>
+            <li><a href="http://yyragnarok.com/forum.php">论坛</a></li>
+            <li><a href="https://rd.fharr.com/" target="_blank">RO幻想厅</a></li>
+        </ul>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="http://yyragnarok.com/">首页</a>
+        <a href="http://yyragnarok.com/forum.php">论坛</a>
+        <a href="https://rd.fharr.com/" target="_blank">RO幻想厅</a>
+    </div>
+
+    <!--<div id="main">
+        <h1>Responsive Side Menu</h1>
+    </div>-->
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+    </script>
+
+    <header class="showcase">
+        <div class="content">
+            <img src="image\logo.png" class="logo" alt="YYRO">
+            <div class="title">
+                欢迎来到 YYRO
+            </div>
+            <div class="text">
+                YYRO是一个免费的仙境传说服务器用来提供研究和学习，旨在为喜欢仙境传说的冒险家带来最佳和最有趣的游戏体检。
+            </div>
+        </div>
+    </header>
+
+    <!-- Services-->
+    <section class="services">
+        <div class="container grid-3 center">
+            <div>
+                <a href="http://yyragnarok.com/forum.php" target="_blank"><img src="image/forumlogo.png" alt="forumicon"></a>
+                <a href="http://yyragnarok.com/forum.php" target="_blank">
+                    <h4>论坛</h4>
+                </a>
+                <p>在这里您可以查看服务器最新公告，发表游戏内容，以及分享有关游戏资料。</p>
+            </div>
+            <div>
+                <a href="https://space.bilibili.com/514479945" target="_blank"><img src="image/Bilibillogo.png" alt="bilibililogo"></a>
+                <a href="https://space.bilibili.com/514479945" target="_blank">
+                    <h4>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</h4>
+                </a>
+                <p>关注哔哩哔哩频道，您可以看有关游戏最新的演示视频以及玩家录制的视频。</p>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public" target="_blank"><img src="image/youtubelogo.png" alt="youtubelogo"></a>
+                <a href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public" target="_blank">
+                    <h4>YouTube</h4>
+                </a>
+                <p>关注YouTube频道，海外玩家也能看到有关游戏最新的视频^_^</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about bg-light">
+        <div class="container">
+            <div class="grid-2">
+                <div class="center">
+                    <img src="image/329.png" alt="youtubelogo">
+                </div>
+                <div>
+                    <h3>关于我们</h3>
+                    <p>创建于2018年10月，欢迎加入玩家交流游戏QQ群：795444556
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="center bg-dark">
+        <p>YYRO &copy; 2020</p>
+    </footer>
+</body>
+
+</html>
