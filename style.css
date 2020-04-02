@@ -3,6 +3,12 @@
         margin: 0;
         color: #fff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    html {
+        scroll-behavior: smooth;
     }
     
     .navbar {
@@ -144,7 +150,7 @@
     }
     
     .center {
-        text-align: center;
+        text-align: left;
         margin: auto;
     }
     
@@ -177,9 +183,38 @@
     footer p {
         margin: 0;
     }
+    
+    .to-top {
+        background: white;
+        position: fixed;
+        bottom: 16px;
+        right: 32px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        color: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .4s;
+    }
+    
+    .to-top.active {
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+    }
     /* Small Screens */
     
     @media screen and (max-width: 560px) {
+        /*.center {
+            text-align: center;
+            margin: auto;
+        }*/
         .navbar-nav {
             display: none
         }
@@ -208,10 +243,6 @@
         .services div {
             border-bottom: #333 dashed 1px;
             padding: 0.1rem 1rem;
-        }
-        * {
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -moz-tap-highlight-color: rgba(0, 0, 0, 0);
         }
     }
     /* Landscape */
