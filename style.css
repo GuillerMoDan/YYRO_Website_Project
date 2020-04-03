@@ -230,13 +230,10 @@
     /* Small Screens */
     
     @media screen and (max-width: 560px) {
-        .logo-small img {
-            padding-right: 33%;
-        }
-        /*.center {
+        .center {
             text-align: center;
             margin: auto;
-        }*/
+        }
         .navbar-nav {
             display: none
         }
