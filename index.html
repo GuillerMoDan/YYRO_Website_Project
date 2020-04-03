@@ -11,6 +11,10 @@
 </head>
 
 <body>
+    <div class="logo-small">
+        <img src="image/logo.png" alt="YYRO ">
+    </div>
+
     <nav class="navbar">
         <span class="open-slide">
             <a href="#" onclick="openSlideMenu()">
@@ -25,15 +29,17 @@
         <ul class="navbar-nav">
             <li><a href="http://yyragnarok.com/">首页</a></li>
             <li><a href="http://yyragnarok.com/forum.php">论坛</a></li>
-            <li><a href="https://rd.fharr.com/" target="_blank">RO幻想厅</a></li>
+            <li><a href="http://yyragnarok.com/download/" target="_blank">下载</a></li>
+            <li><a href="https://rd.fharr.com/" target="_blank">资料查询</a></li>
         </ul>
     </nav>
 
     <div id="side-menu" class="side-nav">
         <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="http://yyragnarok.com/">首页</a>
-        <a href="http://yyragnarok.com/forum.php">论坛</a>
-        <a href="https://rd.fharr.com/" target="_blank">RO幻想厅</a>
+        <a href="http://yyragnarok.com/">Home</a>
+        <a href="http://yyragnarok.com/forum.php">Forum</a>
+        <a href="http://yyragnarok.com/download/" target="_blank ">Download</a>
+        <a href="https://rd.fharr.com/" target="_blank ">Databases</a>
     </div>
 
     <!--<div id="main">
@@ -53,14 +59,11 @@
     </script>
 
     <header class="showcase">
-        <div class="content">
-            <img src="image\logo.png" class="logo" alt="YYRO">
-            <div class="title">
-                欢迎来到 YYRO
-            </div>
-            <div class="text">
-                YYRO是一个免费的仙境传说服务器用来提供研究和学习，旨在为喜欢仙境传说的冒险家带来最佳和最有趣的游戏体检。
-            </div>
+        <!-- <div class="content ">
+            <img src="# " class="logo " alt="YYRO ">
+            <div class="title ">
+                欢迎
+            </div>-->
         </div>
     </header>
 
@@ -100,6 +103,7 @@
                 </div>
                 <div>
                     <h3>关于我们</h3>
+                    <P>YYRO是一个免费的仙境传说服务器用来提供研究和学习，旨在为喜欢仙境传说的冒险家带来最佳和最有趣的游戏体检。</P>
                     <p>创建于2018年10月，追求原汁的经典内容，同时不间断更新。欢迎加入我们，有空来坐坐^_^</p>
                     <p>玩家交流QQ群：795444556</p>
                 </div>
@@ -116,7 +120,10 @@
     <script type="text/javascript" src="main.js"></script>
 
     <footer class="center bg-dark">
-        <p>YYRO &copy; 2020</p>
+        <p> &copy;
+            <script>
+                new Date().getFullYear() > 2018 && document.write(new Date().getFullYear());
+            </script> YYRO. All Rights Reserved.</p>
     </footer>
 </body>
 
