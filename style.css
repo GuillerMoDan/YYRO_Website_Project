@@ -238,6 +238,15 @@
     /* Small Screens */
     
     @media screen and (max-width: 560px) {
+        .forumicon {
+            width: 30% !important;
+        }
+        .bilibililogo {
+            width: 50% !important;
+        }
+        .services img {
+            width: 25%;
+        }
         .center {
             text-align: center;
             margin: auto;
@@ -275,6 +284,12 @@
     /* Landscape */
     
     @media(max-height: 500px) {
+        .forumicon {
+            width: 29% !important;
+        }
+        .bilibililogo {
+            width: 50% !important;
+        }
         .content .title,
         .content .text {
             display: none;
