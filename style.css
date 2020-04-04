@@ -276,6 +276,9 @@
             font-size: 3rem;
             margin-top: -2rem;
         }
+        .container {
+            padding: 1rem 1rem;
+        }
         .grid-3,
         .grid-2 {
             grid-template-columns: 1fr;
