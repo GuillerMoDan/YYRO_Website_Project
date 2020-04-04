@@ -13,10 +13,12 @@
     
     .navbar {
         background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-        background-color: #131313;
+        background-color: rgb(19, 19, 19);
         background-size: 20px 20px;
         overflow: hidden;
         height: 53px;
+        position: sticky;
+        top: 0;
     }
     
     .logo-small img {
@@ -25,7 +27,7 @@
         display: block;
         height: 60px;
         top: 0;
-        right: 20px;
+        right: 5%;
     }
     
     .navbar a {
@@ -91,7 +93,7 @@
         content: '';
         height: 100vh;
         width: 100%;
-        background-image: url(image/desk.jpg);
+        background-image: url(image/bg_april.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
@@ -174,7 +176,7 @@
     }
     
     .center img {
-        width: 250px;
+        width: 300px;
     }
     
     .forumicon {
@@ -238,6 +240,9 @@
     /* Small Screens */
     
     @media screen and (max-width: 560px) {
+        .logo-small img {
+            right: 35%;
+        }
         .forumicon {
             width: 30% !important;
         }
@@ -289,6 +294,9 @@
         }
         .bilibililogo {
             width: 50% !important;
+        }
+        .services img {
+            width: 33%;
         }
         .content .title,
         .content .text {
