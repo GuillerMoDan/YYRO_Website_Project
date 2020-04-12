@@ -1,0 +1,269 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.underline {
+    border-bottom: #e8491d solid 1.5px;
+    padding-bottom: 6px;
+}
+
+
+/* Header */
+
+.logo img {
+    width: 150px;
+    margin-top: 6px;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    border-bottom: #e8491d solid 4px;
+    position: sticky;
+    top: 0px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 35px;
+}
+
+header .hightlight a {
+    color: #e8491d;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/* side bar menu start */
+
+.open-slide a {
+    /* display: inline-block; */
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    font-size: 18px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* side bar menu end */
+
+
+/* show case */
+
+.showcase {
+    min-height: 400px;
+    background: url(./images/bg_april_resize.jpg) no-repeat 0 -150px;
+    background-position: cover;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+
+/* section.container {
+    z-index: 2;
+} */
+
+.showcase h1 {
+    margin-top: 100px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.showcase p {
+    font-size: 20px;
+    z-index: 2;
+}
+
+
+/* qq ground chat ads */
+
+.qqgroundchat {
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+.qqgroundchat h1 {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.qqgroundchat p {
+    float: right;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 15px;
+    background-color: #e8491d;
+}
+
+
+/* boxes */
+
+.boxes {
+    margin-top: 20px;
+}
+
+.box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.boxes .box img {
+    height: 50px;
+}
+
+
+/* footer */
+
+footer {
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+
+/* About Page */
+
+article.main-col {
+    float: left;
+    width: 65%;
+}
+
+aside.sidebar {
+    float: right;
+    width: 30%;
+}
+
+
+/* media queries */
+
+@media (max-width:768px) {
+    header nav {
+        display: none;
+    }
+    header .logo {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .showcase h1 {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .qqgroundchat h1,
+    .qqgroundchat p,
+    article.main-col,
+    aside.sidebar,
+    .qqgroundchat h1,
+    .qqgroundchat p {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .qqgroundchat p {
+        font-size: 20px;
+    }
+    .boxes .box {
+        float: none;
+        width: 80%;
+        margin: auto;
+    }
+    .qqgroundchat p {
+        width: 100%;
+        padding: 0;
+    }
+}

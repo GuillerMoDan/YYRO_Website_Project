@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>YY Rangraok Online | About us</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- side bar start -->
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,23 25,23" stroke="#fff" stroke-width="1"/>
+                    </svg>
+                </a>
+            </span>
+            <!-- side bar end -->
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="http://yyragnarok.com/forum.php">论坛</a></li>
+                    <li><a href="http://yyragnarok.com/portal.php?mod=view&aid=2" target="_blank">游戏下载</a></li>
+                    <li class="hightlight"><a href="about.html">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- side bar start -->
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="http://yyragnarok.com/forum.php">Forum</a>
+            <a href="http://yyragnarok.com/portal.php?mod=view&aid=2" target="_blank ">Download</a>
+            <a href="about.html">About us</a>
+        </div>
+
+        <script>
+            function openSlideMenu() {
+                document.getElementById('side-menu').style.width = '250px';
+                document.getElementById('main').style.marginLeft = '250px';
+            }
+
+            function closeSlideMenu() {
+                document.getElementById('side-menu').style.width = '0';
+                document.getElementById('main').style.marginLeft = '0';
+            }
+        </script>
+
+        <!-- side bar end -->
+
+    </header>
+
+    <!-- <section class="qqgroundchat">
+        <div class="container">
+            <h1>欢迎加入我们</h1>
+            <p>QQ交流群: 795444556</p>
+        </div>
+    </section> -->
+
+    <section class="main">
+        <div class="container">
+            <article class="main-col">
+                <h1 class="page-title"><span class="underline">服务器设置信息</span></h1>
+                <p>类型：仿官方<br>游戏版本：16.2<br>经验倍率：30倍/30倍<br>等级上限：200/70<br>转生次数：1次（不可混转）<br> 玩家组队经验值分享的等级差距：50级<br>BOSS刷新：官方<br>物品掉率：50倍<br>普通卡片掉率：50倍<br>装备掉率20倍</p>
+                <p>MVP装备掉率：5倍（战死者之墓除外)<br>MVP卡片掉率：5倍(战死者之墓除外，所有捐助进化MVP卡片除外，同名捐助卡片掉率为2倍，且只有官方刷新地图掉落，其余非官方地图不掉落)<br>最大攻速：195 (pvp/gvg 193)<br>攻城战：开放</p>
+                <h1 class="page-title"><span class="underline">关于我们</span></h1>
+                <P>YYRO是一个免费的仙境传说服务器用来提供研究和学习，旨在为喜欢仙境传说的冒险家带来最佳，最有趣和最公平的游戏体验。</P>
+                <p>创建于2018年10月，追求原汁的经典内容，同时不间断更新。欢迎加入我们，有空来YYRO首都普隆德拉的中央水池坐坐^_^</p>
+                <p>玩家交流QQ群：795444556</p>
+            </article>
+
+            <aside class="sidebar">
+                <div class="dark">
+                    <h3>联系我们</h3>
+                    <p>Email: yyragnarok@gmail.com</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 YYRO. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

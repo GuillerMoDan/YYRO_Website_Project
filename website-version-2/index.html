@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>YY Rangraok Online | Home</title>
+    <!-- https://www.youtube.com/watch?v=Wm6CUkswsNw -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- side bar start -->
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,23 25,23" stroke="#fff" stroke-width="1"/>
+                    </svg>
+                </a>
+            </span>
+            <!-- side bar end -->
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li class="hightlight"><a href="index.html">首页</a></li>
+                    <li><a href="http://yyragnarok.com/forum.php">论坛</a></li>
+                    <li><a href="http://yyragnarok.com/portal.php?mod=view&aid=2" target="_blank">游戏下载</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- side bar start -->
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="http://yyragnarok.com/forum.php">Forum</a>
+            <a href="http://yyragnarok.com/portal.php?mod=view&aid=2" target="_blank ">Download</a>
+            <a href="about.html">About us</a>
+        </div>
+
+        <script>
+            function openSlideMenu() {
+                document.getElementById('side-menu').style.width = '250px';
+                document.getElementById('main').style.marginLeft = '250px';
+            }
+
+            function closeSlideMenu() {
+                document.getElementById('side-menu').style.width = '0';
+                document.getElementById('main').style.marginLeft = '0';
+            }
+        </script>
+
+        <!-- side bar end -->
+
+    </header>
+
+    <section class="showcase">
+        <div class="container">
+            <h1>欢迎来到 YYRO 仙境传说</h1>
+            <P>YYRO是一个免费的仙境传说服务器用来提供研究和学习，旨在为喜欢仙境传说的冒险家带来最佳，最有趣和最公平的游戏体验。</P>
+        </div>
+    </section>
+
+    <section class="qqgroundchat">
+        <div class="container">
+            <h1>期待你的加入^_^</h1>
+            <p>QQ交流群: 795444556</p>
+        </div>
+    </section>
+
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <a href="http://yyragnarok.com/forum.php" target="_blank"><img src="./images/forum-icon.png" alt="forum-icon"></a>
+                <a href="http://yyragnarok.com/forum.php" target="_blank">
+                    <h3>论坛</h3>
+                </a>
+                <p>在这里您可以查看服务器最新公告，发表游戏内容，以及分享有关游戏资料。</p>
+            </div>
+
+            <div class="box">
+                <a href="https://space.bilibili.com/514479945" target="_blank"><img src="./images/bilibili-icon.png" alt="bilibili-icon"></a>
+                <a href="https://space.bilibili.com/514479945" target="_blank">
+                    <h3>哔哩哔哩</h3>
+                </a>
+                <p>关注哔哩哔哩频道，您可以看有关游戏最新的演示视频以及玩家录制的视频。</p>
+            </div>
+
+            <div class="box">
+                <a href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public" target="_blank"><img src="./images/youtube-icon.png" alt="youtube-icon"></a>
+                <a href="https://www.youtube.com/channel/UCWSJggjVEluC4rS54BbliPQ?view_as=public" target="_blank">
+                    <h3>YouTube</h3>
+                </a>
+                <p>关注YouTube频道，全世界能看到有关游戏最新的视频^_^</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2020 YYRO. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
