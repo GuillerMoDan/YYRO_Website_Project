@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/download-style.css">
+    <title>YY Rangraok Online | About us</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- side bar start -->
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="1"/>
+                        <path d="M0,23 25,23" stroke="#fff" stroke-width="1"/>
+                    </svg>
+                </a>
+            </span>
+            <!-- side bar end -->
+            <div class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="http://yyragnarok.com/forum.php" target="_blank">论坛</a></li>
+                    <li class="hightlight"><a href="../pages/download.html">游戏下载</a></li>
+                    <li><a href="../pages/about.html">关于我们</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- side bar start -->
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="http://yyragnarok.com/forum.php" target="_blank">Forum</a>
+            <a href="../pages/download.html">Download</a>
+            <a href="about.html">About us</a>
+        </div>
+
+        <script>
+            function openSlideMenu() {
+                document.getElementById('side-menu').style.width = '250px';
+                document.getElementById('main').style.marginLeft = '250px';
+            }
+
+            function closeSlideMenu() {
+                document.getElementById('side-menu').style.width = '0';
+                document.getElementById('main').style.marginLeft = '0';
+            }
+        </script>
+
+        <!-- side bar end -->
+
+    </header>
+
+    <main>
+        <div class="download-container">
+            <div class="download-card1">
+                <a href="http://yyragnarok.com/portal.php?mod=view&aid=2" target="_blank"><button>进入论坛下载页面</button></a>
+            </div>
+
+            <div class="download-card2">
+                <a href="https://share.weiyun.com/5BsSGXT" target="_blank"><button>腾讯微云下载</button></a>
+            </div>
+
+            <div class="download-card3">
+                <a href="http://www.mediafire.com/file/04d51uv7t5u7lfc/YYRO_2.0_FullClient_20200109.exe/file" target="_blank"><button>MediaFire网盘</button></a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2020 YYRO. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

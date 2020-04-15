@@ -42,6 +42,14 @@ a {
     padding-bottom: 6px;
 }
 
+button {
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
 
 /* Header */
 
@@ -51,11 +59,11 @@ a {
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    border-bottom: #e8491d solid 4px;
     position: sticky;
     top: 0px;
+    background: #222222;
+    color: #ffffff;
+    border-bottom: #e8491d solid 4px;
 }
 
 header a {
@@ -91,7 +99,6 @@ header a:hover {
 /* side bar menu start */
 
 .open-slide a {
-    /* display: inline-block; */
     position: absolute;
     left: 0;
     top: 20px;
@@ -135,73 +142,84 @@ header a:hover {
 /* side bar menu end */
 
 
-/* show case */
+/* main section */
 
-.showcase {
-    min-height: 400px;
-    background: url(./images/bg_april_resize.jpg) no-repeat 0 -150px;
-    background-position: cover;
-    text-align: center;
-    color: #ffffff;
-    position: relative;
+.download-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-
-/* section.container {
-    z-index: 2;
-} */
-
-.showcase h1 {
-    margin-top: 100px;
-    font-size: 50px;
-    margin-bottom: 10px;
+.download-card1 {
+    border: 3px solid #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/archbishop_m_sd2.png) no-repeat -50px -70px;
 }
 
-.showcase p {
-    font-size: 20px;
-    z-index: 2;
+.download-card2 {
+    border: 3px solid #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/aygu_sd2.png) no-repeat -170px -110px;
 }
 
+.download-card3 {
+    border: 3px solid #fff;
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/ranger_m_sd2.png) no-repeat -70px -80px;
+}
 
-/* qq ground chat ads */
-
-.qqgroundchat {
+.download-card1 button {
+    font-size: 1rem;
+    color: white;
+    background: rgba(97, 96, 96, 0.8);
     padding: 15px;
-    color: #ffffff;
-    background: #35424a;
+    border-radius: 5px;
 }
 
-.qqgroundchat h1 {
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
+.download-card1 button:hover {
+    background: red;
 }
 
-.qqgroundchat p {
-    float: right;
-    margin-bottom: 5px;
-    margin-top: 5px;
+.download-card2 button {
+    font-size: 1rem;
+    color: white;
+    background: rgba(97, 96, 96, 0.8);
     padding: 15px;
-    background-color: #e8491d;
+    border-radius: 5px;
 }
 
-
-/* boxes */
-
-.boxes {
-    margin-top: 20px;
+.download-card2 button:hover {
+    background: red;
 }
 
-.box {
-    float: left;
-    width: 30%;
-    padding: 10px;
-    text-align: center;
+.download-card3 button {
+    font-size: 1rem;
+    color: white;
+    background: rgba(97, 96, 96, 0.8);
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.boxes .box img {
-    height: 50px;
+.download-card3 button:hover {
+    background: red;
 }
 
 
@@ -214,22 +232,6 @@ footer {
     background-color: #e8491d;
     text-align: center;
 }
-
-
-/* About Page */
-
-article.main-col {
-    float: left;
-    width: 65%;
-}
-
-aside.sidebar {
-    float: right;
-    width: 30%;
-}
-
-
-/* media queries */
 
 @media (max-width:768px) {
     header nav {
@@ -265,5 +267,20 @@ aside.sidebar {
     .qqgroundchat p {
         width: 100%;
         padding: 0;
+    }
+    .download-container {
+        flex-direction: column;
+    }
+    .download-card1 {
+        width: 200px;
+        height: 200px;
+    }
+    .download-card2 {
+        width: 200px;
+        height: 200px;
+    }
+    .download-card3 {
+        width: 200px;
+        height: 200px;
     }
 }
