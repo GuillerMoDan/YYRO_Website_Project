@@ -66,9 +66,9 @@ a {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/runeknight_m_sd2.png), url(../images/bg.jpg);
+    background-image: url(../images/runeknight_m_sd2.png), url(../images/bg2.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: 50% 100px, center;
+    background-position: 50% 30%, center;
     background-size: 500px, cover;
 }
 
@@ -114,8 +114,7 @@ main {
 
 .general-info__img,
 .general-info__img img {
-    width: 600px;
-    height: 600px;
+    width: 500px;
 }
 
 .general-info__text h2 {
@@ -135,7 +134,8 @@ main {
 
 /* social media section */
 
-.social-media {
+
+/* .social-media {
     width: 100%;
     height: 500px;
     background-color: rgb(8, 11, 26);
@@ -167,4 +167,4 @@ main {
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
-}
+} */
