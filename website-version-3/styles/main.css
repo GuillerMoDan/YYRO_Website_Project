@@ -1,0 +1,228 @@
+Html,
+body {
+  Margin: 0;
+  padding: 0;
+  Box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  Box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: ZCOOL KuaiLe;
+}
+
+.current {
+  border-bottom: 2px solid red;
+}
+
+@font-face {
+  font-family: "ZCOOL KuaiLe";
+  src: url(../../assets/fonts/ZCOOL_KuaiLe/ZCOOLKuaiLe-Regular.ttf);
+}
+
+.nav-bar {
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-bar__logo img {
+  width: 150px;
+}
+
+.nav-bar {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.nav-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar li {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.nav-bar a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-bar li:hover {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+header {
+  height: 800px;
+  background-image: url(../assets/images/runeknight_m_sd2.png), url(../assets/images/bg2.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 30%, center;
+  background-size: 550px, cover;
+}
+
+.showcase-img {
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+}
+
+main {
+  background-color: #1f1d1d;
+}
+
+.general-info {
+  background: url(../../assets/images/crissxcross.png);
+  padding: 50px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #080b1a;
+}
+
+.general-info__text {
+  width: 500px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.general-info__text h2 {
+  color: white;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.general-info__text p {
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.general-info__img,
+.general-info__img img {
+  width: 30vw;
+}
+
+.general-info__text h2 {
+  border-bottom: 3px solid yellow;
+}
+
+.general-info__qq {
+  border-style: none;
+  padding: 15px 30px;
+  background-color: rgba(216, 210, 210, 0);
+  color: whitesmoke;
+  border: 1px solid yellow;
+  font-size: 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: ZCOOL KuaiLe;
+}
+
+.divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.divider img {
+  width: 100%;
+}
+
+.game-intro {
+  background: url(../../assets/images/crissxcross.png);
+  background-color: #040210;
+  padding: 50px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.game-intro__text {
+  width: 500px;
+  text-align: left;
+  line-height: 1.6;
+  color: white;
+}
+
+.game-intro__title {
+  border-bottom: 3px solid yellow;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.game-intro__disc {
+  padding: 10px;
+}
+
+.game-intro__image img {
+  width: 33vw;
+}
+
+.game-intro__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-intro__subtitle h5 {
+  width: 30%;
+  padding: 5px;
+  border: 1px solid yellow;
+  text-align: center;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */

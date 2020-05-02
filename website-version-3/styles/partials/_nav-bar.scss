@@ -1,0 +1,52 @@
+// Nav bar section
+.nav-bar {
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-bar__logo img {
+    width: 150px;
+}
+
+.nav-bar {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    // position: relative;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar li {
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s all;
+}
+
+.nav-bar a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-bar li:hover {
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+header {
+    height: 800px;
+    background-image: url(../assets/images/runeknight_m_sd2.png), url(../assets/images/bg2.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 30%, center;
+    background-size: 550px, cover;
+}
+
+.showcase-img {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+}
