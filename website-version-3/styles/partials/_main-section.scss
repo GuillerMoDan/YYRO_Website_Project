@@ -12,7 +12,8 @@ main {
 }
 
 .general-info__text {
-    width: 500px;
+    // width: 500px;
+    width: 45vw;
     // height: 450px;
     text-align: left;
     line-height: 1.6;
@@ -36,6 +37,7 @@ main {
 }
 
 .general-info__text h2 {
+    width: 25vw;
     border-bottom: 3px solid yellow;
 }
 
@@ -48,51 +50,59 @@ main {
     font-size: 2rem;
     border-radius: 5px;
     font-weight: bold;
-    font-family: $primary-font;
+    font-family: genkai-mincho-2;
 }
 
 // Game discription section
-.divider {
-    display: flex;
-    justify-content: center;
-    img {
-        width: 100%;
-    }
-}
-
 .game-intro {
     background: url(../../assets/images/crissxcross.png);
-    background-color: #040210;
-    padding: 50px 0 50px 0;
-    display: flex;
-    justify-content: space-evenly;
+    background-color: rgb(8, 11, 26);
+    padding: 0 0 50px 0;
+    .game-intro-container1 {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        img {
+            width: 300px;
+        }
+    }
+    .game-intro-container2 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-right: 10px;
+        padding: 5px;
+        border: 1px solid yellow;
+        border-radius: 5px;
+    }
     &__text {
-        width: 500px;
+        // width: 500px;
+        // width: 35vw;
         // height: 450px;
         text-align: left;
         line-height: 1.6;
         color: white;
     }
-    &__title {
-        border-bottom: 3px solid yellow;
-        padding: 10px;
-        font-size: 2rem;
-    }
-    &__disc {
-        padding: 10px;
-    }
-    &__image img {
-        width: 33vw;
-    }
     &__subtitle {
         display: flex;
         justify-content: center;
-        h5 {
+        padding-bottom: 50px;
+        // padding-top: 50px;
+        h4,
+        h2 {
             width: 30%;
             padding: 5px;
             border: 1px solid yellow;
             text-align: center;
             border-radius: 5px;
         }
+    }
+    &__subtitle--space {
+        padding-top: 50px;
+    }
+    &__disc {
+        font-size: 1.1rem;
     }
 }

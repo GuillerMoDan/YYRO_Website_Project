@@ -1,0 +1,34 @@
+// divider 
+.divider {
+    // background: url(../../assets/images/crissxcross.png);
+    background-color: rgb(8, 11, 26);
+}
+
+.footer-container {
+    background: url(../../assets/images/crissxcross.png);
+    background-color: rgb(8, 11, 26);
+}
+
+.yyroFooter {
+    width: 70%;
+    margin: 0 auto;
+    height: 20vh;
+    background: url(../../assets/images/crissxcross.png);
+    background-color: rgb(8, 11, 26);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link {
+        padding-bottom: 30px;
+    }
+}
+
+.socialMedia {
+    &__playNow {
+        background-color: yellow;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: black;
+    }
+}

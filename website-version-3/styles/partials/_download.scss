@@ -1,0 +1,100 @@
+.nav-bar-download {
+    background-image: none;
+    height: auto;
+    background: url(../../assets/images/crissxcross.png);
+    background-color: #040210;
+}
+
+.downloadSection {
+    background: url(../../assets/images/crissxcross.png);
+    background-color: #040210;
+    text-align: center;
+    color: white;
+    &__title {
+        margin: 20px auto;
+        width: 200px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid yellow;
+    }
+    &__pargh {
+        font-size: 1.2rem;
+    }
+    a {
+        color: white;
+    }
+}
+
+.downloadSection-container {
+    width: 70%;
+    margin: 0 auto;
+    // border: 1px dotted white;
+    line-height: 2rem;
+}
+
+.downloadLink {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    border-bottom: 1px dotted white;
+    &__card {
+        border: 3px solid yellow;
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
+    &__card--red {
+        border: 3px solid red;
+    }
+    &__card--blue {
+        border: 3px solid blue;
+    }
+    &__card:hover {
+        background: yellow;
+        transition: 0.7s;
+        a {
+            color: black;
+        }
+    }
+    &__card--red:hover {
+        background: red;
+        transition: 0.7s;
+    }
+    &__card--blue:hover {
+        background: blue;
+        transition: 0.7s;
+    }
+}
+
+.download-information {
+    padding: 20px 0;
+    border-bottom: 1px dotted white;
+}
+
+.download-information-container {
+    // border: 1px dotted white;
+    width: 380px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 2rem;
+    ol {
+        list-style-type: disc;
+    }
+}
+
+.patchdownload__title {
+    margin: 20px auto;
+    width: 300px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid yellow;
+}
+
+.patchdownload a {
+    color: yellow;
+    font-size: 1rem;
+    border: 1px solid yellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.patchdownload__yellow {
+    color: yellow;
+}

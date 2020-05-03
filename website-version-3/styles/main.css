@@ -22,7 +22,8 @@ ul {
   margin: 0;
 }
 
-li {
+li,
+ol {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -33,16 +34,36 @@ a {
 }
 
 body {
-  font-family: ZCOOL KuaiLe;
+  font-family: Qingsongshouxie2;
 }
 
 .current {
-  border-bottom: 2px solid red;
+  border-bottom: 3px solid red;
 }
 
 @font-face {
   font-family: "ZCOOL KuaiLe";
   src: url(../../assets/fonts/ZCOOL_KuaiLe/ZCOOLKuaiLe-Regular.ttf);
+}
+
+@font-face {
+  font-family: "kangkang";
+  src: url(../../assets/fonts/kangkang/kangkang.ttf);
+}
+
+@font-face {
+  font-family: "Qingsongshouxie1";
+  src: url(../../assets/fonts/Qingsongshouxie/Qingsongshouxie1.ttf);
+}
+
+@font-face {
+  font-family: "Qingsongshouxie2";
+  src: url(../../assets/fonts/Qingsongshouxie/Qingsongshouxie2.ttf);
+}
+
+@font-face {
+  font-family: "genkai-mincho-2";
+  src: url(../../assets/fonts/genkai-mincho-2/genkai-mincho-2.ttf);
 }
 
 .nav-bar {
@@ -75,34 +96,82 @@ body {
 }
 
 .nav-bar li {
-  margin-left: 20px;
-  padding: 10px;
-  border-radius: 5px;
+  margin-left: 50px;
+  padding: 5px;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
 .nav-bar a {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
-.nav-bar li:hover {
-  background-color: rgba(255, 255, 0, 0.2);
+.nav-bar a:hover {
+  color: yellow;
 }
 
 header {
   height: 800px;
-  background-image: url(../assets/images/runeknight_m_sd2.png), url(../assets/images/bg2.jpg);
+  background-image: url(../assets/images/bg-01.png), url(../assets/images/bg2.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-position: 50% 30%, center;
-  background-size: 550px, cover;
+  background-position: 50% 70%, center;
+  background-size: 650px, cover;
 }
 
 .showcase-img {
   position: absolute;
   left: 200px;
   bottom: 0;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  height: 500px;
+  color: white;
+  margin-left: 8%;
+}
+
+.sidebar__accountApply, .sidebar__download, .sidebar__video {
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin: 5px;
+  background-color: rgba(111, 159, 221, 0.5);
+  border-radius: 30px;
+}
+
+.sidebar__livecount {
+  border: 5px solid yellow;
+  padding: 15px;
+  margin: 5px;
+  background-color: rgba(202, 118, 150, 0.2);
+  border-radius: 30px;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.sidebar img {
+  Width: 50px;
+}
+
+.sidebar__video:hover, .sidebar__accountApply:hover, .sidebar__download:hover {
+  background-color: rgba(111, 159, 221, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 main {
@@ -125,7 +194,7 @@ main {
 }
 
 .general-info__text {
-  width: 500px;
+  width: 45vw;
   text-align: left;
   line-height: 1.6;
 }
@@ -148,6 +217,7 @@ main {
 }
 
 .general-info__text h2 {
+  width: 25vw;
   border-bottom: 3px solid yellow;
 }
 
@@ -160,53 +230,46 @@ main {
   font-size: 2rem;
   border-radius: 5px;
   font-weight: bold;
-  font-family: ZCOOL KuaiLe;
-}
-
-.divider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.divider img {
-  width: 100%;
+  font-family: genkai-mincho-2;
 }
 
 .game-intro {
   background: url(../../assets/images/crissxcross.png);
-  background-color: #040210;
-  padding: 50px 0 50px 0;
+  background-color: #080b1a;
+  padding: 0 0 50px 0;
+}
+
+.game-intro .game-intro-container1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.game-intro__text {
-  width: 500px;
-  text-align: left;
-  line-height: 1.6;
-  color: white;
+.game-intro .game-intro-container1 img {
+  width: 300px;
+}
+
+.game-intro .game-intro-container2 {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .game-intro__title {
-  border-bottom: 3px solid yellow;
-  padding: 10px;
-  font-size: 2rem;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid yellow;
+  border-radius: 5px;
 }
 
-.game-intro__disc {
-  padding: 10px;
-}
-
-.game-intro__image img {
-  width: 33vw;
+.game-intro__text {
+  text-align: left;
+  line-height: 1.6;
+  color: white;
 }
 
 .game-intro__subtitle {
@@ -216,13 +279,178 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
 }
 
-.game-intro__subtitle h5 {
+.game-intro__subtitle h4,
+.game-intro__subtitle h2 {
   width: 30%;
   padding: 5px;
   border: 1px solid yellow;
   text-align: center;
   border-radius: 5px;
+}
+
+.game-intro__subtitle--space {
+  padding-top: 50px;
+}
+
+.game-intro__disc {
+  font-size: 1.1rem;
+}
+
+.divider {
+  background-color: #080b1a;
+}
+
+.footer-container {
+  background: url(../../assets/images/crissxcross.png);
+  background-color: #080b1a;
+}
+
+.yyroFooter {
+  width: 70%;
+  margin: 0 auto;
+  height: 20vh;
+  background: url(../../assets/images/crissxcross.png);
+  background-color: #080b1a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.yyroFooter__link {
+  padding-bottom: 30px;
+}
+
+.socialMedia__playNow {
+  background-color: yellow;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+}
+
+.nav-bar-download {
+  background-image: none;
+  height: auto;
+  background: url(../../assets/images/crissxcross.png);
+  background-color: #040210;
+}
+
+.downloadSection {
+  background: url(../../assets/images/crissxcross.png);
+  background-color: #040210;
+  text-align: center;
+  color: white;
+}
+
+.downloadSection__title {
+  margin: 20px auto;
+  width: 200px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid yellow;
+}
+
+.downloadSection__pargh {
+  font-size: 1.2rem;
+}
+
+.downloadSection a {
+  color: white;
+}
+
+.downloadSection-container {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.downloadLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 20px 0;
+  border-bottom: 1px dotted white;
+}
+
+.downloadLink__card {
+  border: 3px solid yellow;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.downloadLink__card--red {
+  border: 3px solid red;
+}
+
+.downloadLink__card--blue {
+  border: 3px solid blue;
+}
+
+.downloadLink__card:hover {
+  background: yellow;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.downloadLink__card:hover a {
+  color: black;
+}
+
+.downloadLink__card--red:hover {
+  background: red;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.downloadLink__card--blue:hover {
+  background: blue;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.download-information {
+  padding: 20px 0;
+  border-bottom: 1px dotted white;
+}
+
+.download-information-container {
+  width: 380px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.download-information-container ol {
+  list-style-type: disc;
+}
+
+.patchdownload__title {
+  margin: 20px auto;
+  width: 300px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid yellow;
+}
+
+.patchdownload a {
+  color: yellow;
+  font-size: 1rem;
+  border: 1px solid yellow;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.patchdownload__yellow {
+  color: yellow;
 }
 /*# sourceMappingURL=main.css.map */
